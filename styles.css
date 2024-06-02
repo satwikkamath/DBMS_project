@@ -109,7 +109,7 @@ ul ul {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],input[type="date"] {
     padding: 12px;
     border: 1px solid #ced4da;
     border-radius: 5px;

@@ -20,12 +20,10 @@ $edit_data_url = "";
   <div class="navbar">
     <?php echo "<a href='$index_url'>Home</a>
       <a href='$insert_url'>Insert</a>
-      <a href='$view_url'>View</a>
-      <a href='$edit_url'>Edit</a>
-      <a href='$delete_url'>Delete</a>"; ?>
+      <a href='$view_url'>View</a>"; ?>
   </div>
   <div class="container">
-    <h2>Insert Data</h2>
+    <h2>Insert Stadium Data</h2>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
@@ -67,18 +65,14 @@ $edit_data_url = "";
     }
     ?>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-      <label for="stadium_id">Stadium ID:</label>
-      <input type="text" id="stadium_id" name="stadium_id" required><br><br>
-      <label for="stadium_name">Stadium Name:</label>
-      <input type="text" id="stadium_name" name="stadium_name" required><br><br>
-      <label for="round">Round:</label>
-      <input type="text" id="round" name="round" required><br><br>
-      <label for="location">Location:</label>
-      <input type="text" id="location" name="location" required><br><br>
-      <label for="attendance">Attendance:</label>
-      <input type="text" id="attendance" name="attendance" required><br><br>
-      <label for="match_id">Match ID:</label>
-      <input type="text" id="match_id" name="match_id" required><br><br>
+    <div class="myform">
+      <input type="text" placeholder="Stadium ID" id="stadium_id" name="stadium_id" required>
+      <input type="text" placeholder="Stadium Name" id="stadium_name" name="stadium_name" required>
+      <input type="text" placeholder="Round" id="round" name="round" required>
+      <input type="text" placeholder="Location" id="location" name="location" required>
+      <input type="text" placeholder="Attendance" id="attendance" name="attendance" required>
+      <input type="text" placeholder="Match ID" id="match_id" name="match_id" required>
+      </div>
       <input type="submit" value="Submit">
     </form>
   </div>

@@ -20,9 +20,7 @@ $edit_data_url = "";
   <div class="navbar">
     <?php echo " <a href=$index_url>Home</a>
       <a href=$insert_url>Insert</a>
-      <a href=$view_url>View</a>
-      <a href=$edit_url>Edit</a>
-      <a href=$delete_url>Delete</a>"; ?>
+      <a href=$view_url>View</a>"; ?>
   </div>
   <div class="container">
     <h2>Insert Goals Of Indivisual Players</h2>

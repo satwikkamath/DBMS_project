@@ -20,12 +20,10 @@ $edit_data_url = "";
   <div class="navbar">
     <?php echo " <a href=$index_url>Home</a>
       <a href=$insert_url>Insert</a>
-      <a href=$view_url>View</a>
-      <a href=$edit_url>Edit</a>
-      <a href=$delete_url>Delete</a>"; ?>
+      <a href=$view_url>View</a>"; ?>
   </div>
   <div class="container">
-    <h2>Insert Data</h2>
+    <h2>Insert Team Data</h2>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
@@ -73,42 +71,31 @@ $edit_data_url = "";
 
 
     <form action="" method="post">
-    <label for="team_id">Team ID:</label>
-        <input type="text" id="team_id" name="team_id" required>
+      <div class="myform">
+        <input type="text" placeholder="Team ID" id="team_id" name="team_id" required>
         
-        <label for="team_name">Team Name:</label>
-        <input type="text" id="team_name" name="team_name" required>
+        <input type="text" placeholder="Team Name" id="team_name" name="team_name" required>
         
-        <label for="wins">Wins:</label>
-        <input type="text" id="wins" name="wins" required>
+        <input type="text" placeholder="Wins" id="wins" name="wins" required>
 
-        <label for="losses">Losses:</label>
-        <input type="text" id="losses" name="losses" required>
+        <input type="text" placeholder="Losses" id="losses" name="losses" required>
 
-        <label for="draws">Draws:</label>
-        <input type="text" id="draws" name="draws" required>
+        <input type="text" placeholder="Draws" id="draws" name="draws" required>
 
-        <label for="goals_scored">Goals Scored:</label>
-        <input type="text" id="goals_scored" name="goals_scored" required>
+        <input type="text" placeholder="Goals Scored" id="goals_scored" name="goals_scored" required>
 
-        <label for="goals_conceded">Goals Conceded:</label>
-        <input type="text" id="goals_conceded" name="goals_conceded" required>
+        <input type="text" placeholder="Goals Conceded" id="goals_conceded" name="goals_conceded" required>
 
-        <label for="clean_sheets">Clean Sheets:</label>
-        <input type="text" id="clean_sheets" name="clean_sheets" required>
+        <input type="text" placeholder="Clean Sheets" id="clean_sheets" name="clean_sheets" required>
 
-        <label for="yellow_cards">Yellow Cards:</label>
-        <input type="text" id="yellow_cards" name="yellow_cards" required>
+        <input type="text" placeholder="Yellow Cards" id="yellow_cards" name="yellow_cards" required>
 
-        <label for="red_cards">Red Cards:</label>
-        <input type="text" id="red_cards" name="red_cards" required>
+        <input type="text" placeholder="Red Cards" id="red_cards" name="red_cards" required>
 
-        <label for="highest_finish">Highest Finish:</label>
-        <input type="text" id="highest_finish" name="highest_finish" required>
+        <input type="text" placeholder="Highest Finish" id="highest_finish" name="highest_finish" required>
 
-        <label for="group_id">Group ID:</label>
-        <input type="text" id="group_id" name="group_id">
-        
+        <input type="text" placeholder="Group ID" id="group_id" name="group_id">
+        </div>
         <input type="submit" value="Insert" name="insert-button">
     </form>
   </body>

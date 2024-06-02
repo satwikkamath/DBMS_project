@@ -12,7 +12,7 @@ $edit_data_url = "";
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Insert Data</title>
+  <title>Insert Groups</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -20,12 +20,10 @@ $edit_data_url = "";
   <div class="navbar">
     <?php echo " <a href=$index_url>Home</a>
       <a href=$insert_url>Insert</a>
-      <a href=$view_url>View</a>
-      <a href=$edit_url>Edit</a>
-      <a href=$delete_url>Delete</a>"; ?>
+      <a href=$view_url>View</a>;" ?>
   </div>
   <div class="container">
-    <h2>Insert Data</h2>
+    <h2>Insert Group Data</h2>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
@@ -66,24 +64,19 @@ $edit_data_url = "";
 
 
     <form action="" method="post">
-    <label for="group_id">Group ID:</label>
-        <input type="text" id="group_id" name="group_id" required>
+      <div class="myform">
+        <input type="text" id="group_id" placeholder="Group ID" name="group_id" required>
         
-        <label for="team_name">Team Name:</label>
-        <input type="text" id="team_name" name="team_name" required>
+        <input type="text" id="team_name" placeholder="Team Name" name="team_name" required>
         
-        <label for="points_gained">Points Gained:</label>
-        <input type="text" id="points_gained" name="points_gained" required>
+        <input type="text" id="points_gained" placeholder="Points Gained" name="points_gained" required>
 
-        <label for="positions">Positions:</label>
-        <input type="text" id="positions" name="positions" required>
+        <input type="text" id="positions" placeholder="Positions" name="positions" required>
 
-        <label for="status">Status:</label>
-        <input type="text" id="status" name="status" required>
+        <input type="text" id="status" placeholder="Status" name="status" required>
 
-        <label for="team_id">Team ID:</label>
-        <input type="text" id="team_id" name="team_id" required>
-        
+        <input type="text" id="team_id" placeholder="Team ID" name="team_id" required>
+        </div>
         <input type="submit" value="Insert" name="insert-button">
     </form>
   </body>

@@ -12,7 +12,7 @@ $edit_data_url = "";
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Insert Data</title>
+  <title>Insert Player Data</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -20,9 +20,7 @@ $edit_data_url = "";
   <div class="navbar">
     <?php echo "<a href='$index_url'>Home</a>
       <a href='$insert_url'>Insert</a>
-      <a href='$view_url'>View</a>
-      <a href='$edit_url'>Edit</a>
-      <a href='$delete_url'>Delete</a>"; ?>
+      <a href='$view_url'>View</a>"; ?>
   </div>
   <div class="container">
     <h2>Insert Data</h2>
@@ -82,46 +80,28 @@ $edit_data_url = "";
     }
     ?>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-      <label for="player">Player:</label>
-      <input type="text" id="player" name="player" required><br><br>
-      <label for="position">Position:</label>
-      <input type="text" id="position" name="position" required><br><br>
-      <label for="team">Team:</label>
-      <input type="text" id="team" name="team" required><br><br>
-      <label for="age">Age:</label>
-      <input type="text" id="age" name="age" required><br><br>
-      <label for="club">Club:</label>
-      <input type="text" id="club" name="club" required><br><br>
-      <label for="birth_year">Birth Year:</label>
-      <input type="text" id="birth_year" name="birth_year" required><br><br>
-      <label for="games">Games:</label>
-      <input type="text" id="games" name="games" required><br><br>
-      <label for="games_starts">Games Starts:</label>
-      <input type="text" id="games_starts" name="games_starts" required><br><br>
-      <label for="minutes">Minutes:</label>
-      <input type="text" id="minutes" name="minutes" required><br><br>
-      <label for="minutes_90s">Minutes 90s:</label>
-      <input type="text" id="minutes_90s" name="minutes_90s" required><br><br>
-      <label for="goals">Goals:</label>
-      <input type="text" id="goals" name="goals" required><br><br>
-      <label for="assists">Assists:</label>
-      <input type="text" id="assists" name="assists" required><br><br>
-      <label for="goals_pens">Goals Pens:</label>
-      <input type="text" id="goals_pens" name="goals_pens" required><br><br>
-      <label for="pens_made">Pens Made:</label>
-      <input type="text" id="pens_made" name="pens_made" required><br><br>
-      <label for="cards_yellow">Cards Yellow:</label>
-      <input type="text" id="cards_yellow" name="cards_yellow" required><br><br>
-      <label for="cards_red">Cards Red:</label>
-      <input type="text" id="cards_red" name="cards_red" required><br><br>
-      <label for="goals_per90">Goals Per 90:</label>
-      <input type="text" id="goals_per90" name="goals_per90" required><br><br>
-      <label for="assists_per90">Assists Per 90:</label>
-      <input type="text" id="assists_per90" name="assists_per90" required><br><br>
-      <label for="goals_pens_per90">Goals Pens Per 90:</label>
-      <input type="text" id="goals_pens_per90" name="goals_pens_per90" required><br><br>
-      <label for="goals_assists_pens_per90">Goals Assists Pens Per 90:</label>
-      <input type="text" id="goals_assists_pens_per90" name="goals_assists_pens_per90" required><br><br>
+    <div class="myform">
+      <input type="text" placeholder="Player" id="player" name="player" required><br><br>
+      <input type="text" placeholder="Position" id="position" name="position" required><br><br>
+      <input type="text" placeholder="Team" id="team" name="team" required><br><br>
+      <input type="text" placeholder="Age" id="age" name="age" required><br><br>
+      <input type="text" placeholder="Club" id="club" name="club" required><br><br>
+      <input type="text" placeholder="Birth Year" id="birth_year" name="birth_year" required><br><br>
+      <input type="text" placeholder="Games" id="games" name="games" required><br><br>
+      <input type="text" placeholder="Game_Starts" id="games_starts" name="games_starts" required><br><br>
+      <input type="text" placeholder="Minutes" id="minutes" name="minutes" required><br><br>
+      <input type="text" placeholder="Minutes_90" id="minutes_90s" name="minutes_90s" required><br><br>
+      <input type="text" placeholder="Goals" id="goals" name="goals" required><br><br>
+      <input type="text" placeholder="Assists" id="assists" name="assists" required><br><br>
+      <input type="text" placeholder="Goals Pens" id="goals_pens" name="goals_pens" required><br><br>
+      <input type="text" placeholder="Pens Made" id="pens_made" name="pens_made" required><br><br>
+      <input type="text" placeholder="Yellow Cards" id="cards_yellow" name="cards_yellow" required><br><br>
+      <input type="text" placeholder="Red Cards" id="cards_red" name="cards_red" required><br><br>
+      <input type="text" placeholder="Goals per 90" id="goals_per90" name="goals_per90" required><br><br>
+      <input type="text" placeholder="Assists per 90" id="assists_per90" name="assists_per90" required><br><br>
+      <input type="text" placeholder="Goal Penalties per 90" id="goals_pens_per90" name="goals_pens_per90" required><br><br>
+      <input type="text" placeholder="Goal Assists per 90" id="goals_assists_pens_per90" name="goals_assists_pens_per90" required><br><br>
+      </div>
       <input type="submit" value="Submit">
     </form>
   </div>
