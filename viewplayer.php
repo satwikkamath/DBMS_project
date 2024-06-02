@@ -59,7 +59,6 @@ $standings_url = "standings.php";
         <th>Assists Per 90</th>
         <th>Goal Penalties Per 90</th>
         <th>G/A per 90</th>
-        <th>Actions</th>
         <th>Edit</th>
         <th>Delete</th>
       </tr>
