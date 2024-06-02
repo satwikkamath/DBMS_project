@@ -24,14 +24,14 @@ $standings_url = "standings.php";
       <a href='$insert_url'>Insert</a>
       <a href='$view_url'>View</a>"; ?>
   </div>
-  <div class="container">
-    <h2>Welcome to the FIFA World Cup 2022 Database Management</h2>
-    <p>This website is designed to help you manage the database for the FIFA World Cup 2022. You can easily view, insert, edit, and delete data related to the World Cup.</p>
+  <div class="container">   
+    <h1>Welcome to the FIFA World Cup 2022 Database Management</h2>
+    <h4>This website is designed to help you manage the database for the FIFA World Cup 2022. You can easily view, insert, edit, and delete data related to the World Cup.</p>
     
-    <h3>Features:</h3>
+    <h2>Features:</h3>
     <div class="features-boxes">
       <div class="feature-box">
-        <h4>Viewing Data</h4>
+        <h3>Viewing Data</h4>
         <ul>
           <li>Goals scored by individuals</li>
           <li>Groups in the World Cup</li>
@@ -42,15 +42,15 @@ $standings_url = "standings.php";
         </ul>
       </div>
       <div class="feature-box">
-        <h4>Editing Data</h4>
+        <h3>Editing Data</h4>
         <p>Edit the data directly from the view pages.</p>
       </div>
       <div class="feature-box">
-        <h4>Deleting Data</h4>
+        <h3>Deleting Data</h4>
         <p>Delete data directly from the view pages.</p>
       </div>
       <div class="feature-box">
-        <h4>Inserting Data</h4>
+        <h3>Inserting Data</h4>
         <ul>
           <li>Goals scored by individuals</li>
           <li>Groups in the World Cup</li>
@@ -62,10 +62,10 @@ $standings_url = "standings.php";
       </div>
     </div>
     
-    <h3>Meet Our Team</h3>
+    <h2>Meet Our Team</h3>
     <div class="team-boxes">
       <div class="team-box">
-        <img src="" alt="Satwik Kamath" />
+        <img src="images/satwik.jpg" alt="Satwik Kamath" />
         <p><strong>Satwik Kamath</strong></p>
       </div>
       <div class="team-box">

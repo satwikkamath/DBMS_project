@@ -53,20 +53,24 @@ h3 {
 p {
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
+    color: black;
 }
 
 ul {
     text-align: left;
     margin: 10px 0;
     padding-left: 20px;
-    color: #555;
+    color: white;
 }
 
 ul ul {
     margin-top: 5px;
 }
 
+img{
+    height: 50px;
+    width: 50px;
+}
 .features-boxes, .team-boxes {
     display: flex;
     justify-content: space-between;
@@ -76,23 +80,32 @@ ul ul {
 }
 
 .feature-box, .team-box {
-    background-color: #f4f7f6;
-    border: 1px solid #ced4da;
+    background-color: #333;
+    border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
     /* flex: 1 1 calc(25% - 20px); */
     width: 20%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 9px 18px black;
     text-align: left;
+    transition: all 0.5s ease-in-out;
 }
 
-.feature-box h4 {
-    /* color: #007bff; */
+.feature-box:hover, .team-box:hover{
+    scale: 1.1;
+}
+.feature-box h3 {
+    color: white;
     margin-bottom: 10px;
+}
+.feature-box p, .team-box p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: white;
 }
 
 .feature-box ul, .feature-box p {
-    color: #555;
+    color: white;
 }
 
 .team-box {
