@@ -65,19 +65,19 @@ $standings_url = "standings.php";
     <h3>Meet Our Team</h3>
     <div class="team-boxes">
       <div class="team-box">
-        <img src="" alt="Satwik Kamath" />
+        <img src="Satwik.jpg" alt="Satwik Kamath" />
         <p><strong>Satwik Kamath</strong></p>
       </div>
       <div class="team-box">
-        <img src="" alt="Shreesha T.P" />
+        <img src="Shreesha.JPG" alt="Shreesha T.P" />
         <p><strong>Shreesha T.P</strong></p>
       </div>
       <div class="team-box">
-        <img src="" alt="Shreeya R" />
+        <img src="Shreeya.jpg" alt="Shreeya R" />
         <p><strong>Shreeya R</strong></p>
       </div>
       <div class="team-box">
-        <img src="" alt="Shreya P Manchala" />
+        <img src="Shreya.jpg" alt="Shreya P Manchala" />
         <p><strong>Shreya P Manchala</strong></p>
       </div>
     </div>
