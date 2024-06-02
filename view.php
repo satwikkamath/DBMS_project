@@ -26,8 +26,7 @@ $team_url = "viewteams.php";
     <?php echo " <a href=$index_url>Home</a>
       <a href=$insert_url>Insert</a>
       <a href=$view_url>View</a>
-      <a href=$edit_url>Edit</a>
-      <a href=$delete_url>Delete</a>"; ?>
+      "?>;
   </div>
   <div class="container">
     <h2>View Data</h2>

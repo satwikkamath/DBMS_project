@@ -21,8 +21,7 @@ $edit_data_url = "";
     <?php echo " <a href=$index_url>Home</a>
       <a href=$insert_url>Insert</a>
       <a href=$view_url>View</a>
-      <a href=$edit_url>Edit</a>
-      <a href=$delete_url>Delete</a>"; ?>
+      "; ?>
   </div>
   <div class="container">
     <h2>View Stadiums</h2>
@@ -48,6 +47,8 @@ $edit_data_url = "";
         <th>Location</th>
         <th>Attendance</th>
         <th>Match ID</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
       <?php
       $con = new mysqli("localhost", "root", "", "fifa");
@@ -100,8 +101,8 @@ $edit_data_url = "";
                                           <td><?php echo $value['Location']; ?></td>
                                           <td><?php echo $value['attendance']; ?></td>
                                           <td><?php echo $value['match_id']; ?></td>
-                                          <td><button type='submit' name='delete_submit'>Delete</button></td>
-                                          <td><button type='submit' name='edit_submit'>Edit</button></td>
+                                          <td> <input type='submit' name='edit_submit' value='Edit'></td>
+              <td> <input type='submit' name='delete_submit' value='Delete'></td>
                                         </form>
                                       </tr>
                                       <?php
@@ -132,8 +133,8 @@ $edit_data_url = "";
                                           <td><?php echo $value['Location']; ?></td>
                                           <td><?php echo $value['attendance']; ?></td>
                                           <td><?php echo $value['match_id']; ?></td>
-                                          <td><button type='submit' name='delete_submit'>Delete</button></td>
-                                          <td><button type='submit' name='edit_submit'>Edit</button></td>
+                                          <td> <input type='submit' name='edit_submit' value='Edit'></td>
+                                          <td> <input type='submit' name='delete_submit' value='Delete'></td>
                                         </form>
                                       </tr>
                                       <?php
@@ -148,14 +149,14 @@ $edit_data_url = "";
                         <form action="" method="POST">
                         <input type="text" hidden name="stadium_id" value="<?php echo $stadium_id; ?>" />
                         <input type="text" hidden name="match_id" value="<?php echo $match_id; ?>" />
-                          <input type="text" hidden name="match_id"  />
+                        <input type="text" hidden name="match_id"  />
                           <td><?php echo $stadium_id; ?></td>
                           <td><input type="text" name="stadium_name"  /></td>
                           <td><input type="text" name="round"  /></td>
                           <td><input type="text" name="Location"  /></td>
                           <td><input type="text" name="attendance" /></td>
                           <td><?php echo $match_id; ?></td>
-                          <td><button type='submit' name='save_submit'>Save</button></td>
+                          <td><input type="submit" name="save_submit" value  = "Save"/></td>
                         </form>
                       </tr>
                       <?php
@@ -210,8 +211,8 @@ $edit_data_url = "";
                                           <td><?php echo $value['Location']; ?></td>
                                           <td><?php echo $value['attendance']; ?></td>
                                           <td><?php echo $value['match_id']; ?></td>
-                                          <td><button type='submit' name='delete_submit'>Delete</button></td>
-                                          <td><button type='submit' name='edit_submit'>Edit</button></td>
+                                          <td> <input type='submit' name='edit_submit' value='Edit'></td>
+                                          <td> <input type='submit' name='delete_submit' value='Delete'></td>
                                         </form>
                                       </tr>
                                       <?php

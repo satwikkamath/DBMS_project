@@ -20,7 +20,8 @@ $delete_url = "delete.php";
     <?php echo " <a href=$index_url>Home</a>
       <a href=$insert_url>Insert</a>
       <a href=$view_url>View</a>
-      "; ?>
+      <a href=$edit_url>Edit</a>
+      <a href=$delete_url>Delete</a>"; ?>
   </div>
   <div class="container">
     <h2>View Teams</h2>
@@ -58,9 +59,7 @@ $delete_url = "delete.php";
         <th>Red Cards</th>
         <th>Highest Finish</th>
         <th>Group ID</th>
-      
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>Actions</th>
       </tr>
       <?php
       $con = new mysqli("localhost", "root", "", "fifa");
@@ -143,8 +142,10 @@ $delete_url = "delete.php";
                 <td><?php echo $value['red_cards']; ?></td>
                 <td><?php echo $value['highest_finish']; ?></td>
                 <td><?php echo $value['group_id']; ?></td>
-                <td> <input type='submit' name='edit_submit' value='Edit'></td>
-              <td> <input type='submit' name='delete_submit' value='Delete'></td>
+                <td>
+                  <button type="submit" name="delete_submit">Delete</button>
+                  <button type="submit" name="edit_submit">Edit</button>
+                </td>
               </form>
             </tr>
             <?php
@@ -160,22 +161,12 @@ $delete_url = "delete.php";
         $sql = "SELECT * FROM wcteams";
         $result = $con->query($sql);
 
-       
+        if ($result) {
           foreach ($result as $value) {
             ?>
             <tr>
-              <form action="" method="POST">
+            <form action="" method="POST">
                 <input type="hidden" name="team_id" value="<?php echo $value['team_id']; ?>">
-                <input type="hidden" name="team_name" value="<?php echo $value['team_name']; ?>">
-                <input type="hidden" name="wins" value="<?php echo $value['wins']; ?>">
-                <input type="hidden" name="losses" value="<?php echo $value['losses']; ?>">
-                <input type="hidden" name="draws" value="<?php echo $value['draws']; ?>">
-                <input type="hidden" name="goals_scored" value="<?php echo $value['goals_scored']; ?>">
-                <input type="hidden" name="goals_conceded" value="<?php echo $value['goals_conceded']; ?>">
-                <input type="hidden" name="clean_sheets" value="<?php echo $value['clean_sheets']; ?>">
-                <input type="hidden" name="yellow_cards" value="<?php echo $value['yellow_cards']; ?>">
-                <input type="hidden" name="red_cards" value="<?php echo $value['red_cards']; ?>">
-                <input type="hidden" name="highest_finish" value="<?php echo $value['highest_finish']; ?>">
                 <input type="hidden" name="group_id" value="<?php echo $value['group_id']; ?>">
                 <td><?php echo $value['team_id']; ?></td>
                 <td><?php echo $value['team_name']; ?></td>
@@ -189,11 +180,14 @@ $delete_url = "delete.php";
                 <td><?php echo $value['red_cards']; ?></td>
                 <td><?php echo $value['highest_finish']; ?></td>
                 <td><?php echo $value['group_id']; ?></td>
-                <td> <input type='submit' name='edit_submit' value='Edit'></td>
-              <td> <input type='submit' name='delete_submit' value='Delete'></td>
+                <td>
+                  <button type="submit" name="delete_submit">Delete</button>
+                  <button type="submit" name="edit_submit">Edit</button>
+                </td>
               </form>
             </tr>
             <?php
+          }
           }
       }
 
@@ -219,7 +213,7 @@ $delete_url = "delete.php";
                           <td><input type="text" name="highest_finish" /></td>
                           <td><input type="text" name="group_id" /></td>
                           <td><?php echo $group_id; ?></td>
-                          <td><input type="submit" name="save_submit" value  = "Save"/></td>
+                          <td><button type='submit' name='save_submit'>Save</button></td>
                         </form>
                       </tr>
                       <?php
@@ -313,8 +307,8 @@ $delete_url = "delete.php";
                                           <td><?php echo $value['red_cards']; ?></td>
                                           <td><?php echo $value['highest_finish']; ?></td>
                                           <td><?php echo $value['group_id']; ?></td>
-                                          <td> <input type='submit' name='edit_submit' value='Edit'></td>
-                                          <td> <input type='submit' name='delete_submit' value='Delete'></td>
+                                          <td><button type='submit' name='delete_submit'>Delete</button></td>
+                                          <td><button type='submit' name='edit_submit'>Edit</button></td>
                                         </form>
                                       </tr>
                                       <?php
