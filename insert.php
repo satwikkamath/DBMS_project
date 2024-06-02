@@ -43,7 +43,7 @@ $standings_url = "standings.php";
         <td><a href="<?php echo $goal_url; ?>">Insert Goals by Players</a></td>
       </tr>
       <tr>
-        <td><a href="<?php echo $stadium_url; ?>">Insert Schedule</a></td>
+        <td><a href="<?php echo $stadium_url; ?>">Insert Stadiums</a></td>
         <td><a href="<?php echo $team_url; ?>">Insert Team History</a></td>
       </tr>
     </table>
