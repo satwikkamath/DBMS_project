@@ -10,6 +10,8 @@ $match_url = "insertmatches.php";
 $player_url = "insertplayer.php";
 $stadium_url = "insertstadium.php";
 $team_url = "insertteams.php";
+$standings_url = "standings.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,10 +26,10 @@ $team_url = "insertteams.php";
 <body>
   <div class="navbar">
     <?php echo " <a href=$index_url>Home</a>
+    <a href=$standings_url>Standings</a>
       <a href=$insert_url>Insert</a>
-      <a href=$view_url>View</a>
-      <a href=$edit_url>Edit</a>
-      <a href=$delete_url>Delete</a>"; ?>
+      <a href=$view_url>View</a>"
+       ?>
   </div>
   <div class="container">
     <h2>Insert Data</h2>

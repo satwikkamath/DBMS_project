@@ -4,6 +4,8 @@ $insert_url = "insert.php";
 $view_url = "view.php";
 $edit_url = "edit.php";
 $delete_url = "delete.php";
+$standings_url = "standings.php";
+
 $edit_data_url = "";
 ?>
 <!DOCTYPE html>
@@ -19,6 +21,7 @@ $edit_data_url = "";
 <body>
   <div class="navbar">
     <?php echo " <a href=$index_url>Home</a>
+    <a href=$standings_url>Standings</a>
       <a href=$insert_url>Insert</a>
       <a href=$view_url>View</a>
       "; ?>

@@ -10,6 +10,8 @@ $match_url = "viewmatch.php";
 $player_url = "viewplayer.php";
 $stadium_url = "viewstadium.php";
 $team_url = "viewteams.php";
+$standings_url = "standings.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +26,7 @@ $team_url = "viewteams.php";
 <body>
   <div class="navbar">
     <?php echo " <a href=$index_url>Home</a>
+    <a href=$standings_url>Standings</a>
       <a href=$insert_url>Insert</a>
       <a href=$view_url>View</a>
       "?>;
@@ -40,7 +43,7 @@ $team_url = "viewteams.php";
         <td><a href="<?php echo $goal_url; ?>">View Goals by Players</a></td>
       </tr>
       <tr>
-        <td><a href="<?php echo $stadium_url; ?>">View Schedule</a></td>
+        <td><a href="<?php echo $stadium_url; ?>">View  Stadiums</a></td>
         <td><a href="<?php echo $team_url; ?>">View Team History</a></td>
       </tr>
     </table>
