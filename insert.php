@@ -4,6 +4,12 @@ $insert_url = "insert.php";
 $view_url = "view.php";
 $edit_url = "edit.php";
 $delete_url = "delete.php";
+$goal_url = "insertgoals.php";
+$group_url = "insertgroups.php";
+$match_url = "insertmatches.php";
+$player_url = "insertplayer.php";
+$stadium_url = "insertstadium.php";
+$team_url = "insertteams.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +17,7 @@ $delete_url = "delete.php";
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Insert Data</title>
+  <title>View Data</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -25,15 +31,20 @@ $delete_url = "delete.php";
   </div>
   <div class="container">
     <h2>Insert Data</h2>
-    <form action="insert.php" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="age" required />
-
-      <input type="submit" value="Insert" />
-    </form>
+    <table class="view-table">
+      <tr>
+        <td><a href="<?php echo $group_url; ?>">Insert Groups</a></td>
+        <td><a href="<?php echo $match_url; ?>">Insert Matches</a></td>
+      </tr>
+      <tr>
+        <td><a href="<?php echo $player_url; ?>">Insert Players for a Country</a></td>
+        <td><a href="<?php echo $goal_url; ?>">Insert Goals by Players</a></td>
+      </tr>
+      <tr>
+        <td><a href="<?php echo $stadium_url; ?>">Insert Schedule</a></td>
+        <td><a href="<?php echo $team_url; ?>">Insert Team History</a></td>
+      </tr>
+    </table>
   </div>
 </body>
 
