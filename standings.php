@@ -31,7 +31,7 @@ $standings_url = "standings.php";
   <div class = "round"> 
     <h2>Group - A</h2>
   <div class="group-table">
-    <table>
+    <table id="table1">
       <thead>
         <tr>
           <th>Pos</th>
@@ -49,7 +49,7 @@ $standings_url = "standings.php";
       <tbody>
         <tr>
           <td>1</td>
-          <td><img class="flag" src="./flags/nl-lgflag.gif" alt="Netherlands Flag"> Netherlands</td>
+          <td class = "data"><img class="flag" src="./flags/nl-lgflag.gif" alt="Netherlands Flag"> Netherlands</td>
           <td>3</td>
           <td>2</td>
           <td>1</td>
@@ -103,7 +103,7 @@ $standings_url = "standings.php";
  <div class = "round"> 
   <h2>Group B</h2>
 <div class="group-table">
-  <table>
+  <table id="table1">
     <thead>
       <tr>
         <th>Pos</th>
@@ -175,7 +175,7 @@ $standings_url = "standings.php";
 <div class = "round"> 
   <h2>Group C</h2>
 <div class="group-table">
-  <table>
+  <table id="table1">
     <thead>
       <tr>
         <th>Pos</th>
@@ -248,7 +248,7 @@ $standings_url = "standings.php";
 <div class = "round"> 
   <h2>Group D</h2>
 <div class="group-table">
-  <table>
+  <table id="table1">
     <thead>
       <tr>
         <th>Pos</th>
@@ -321,7 +321,7 @@ $standings_url = "standings.php";
 <div class="round">
   <h2>Group E</h2>
   <div class="group-table">
-    <table>
+    <table id="table1">
       <thead>
         <tr>
           <th>Pos</th>
@@ -393,7 +393,7 @@ $standings_url = "standings.php";
 <div class="round">
   <h2>Group F</h2>
   <div class="group-table">
-    <table>
+    <table id="table1">
       <thead>
         <tr>
           <th>Pos</th>
@@ -465,7 +465,7 @@ $standings_url = "standings.php";
 <div class="round">
   <h2>Group G</h2>
   <div class="group-table">
-    <table>
+    <table id="table1">
       <thead>
         <tr>
           <th>Pos</th>
@@ -540,7 +540,7 @@ $standings_url = "standings.php";
 <div class="round">
   <h2>Group H</h2>
   <div class="group-table">
-    <table>
+    <table id="table1">
       <thead>
         <tr>
           <th>Pos</th>
@@ -689,6 +689,21 @@ $standings_url = "standings.php";
       </div>
     </div>
     <div class="round1">
+      <h2>Third place play-off</h2>
+      <div class="match">
+        <div class="team">
+          <img class="flag" src="./flags/croatia.png" alt="Croatia Flag">
+          <span class="name">Croatia</span>
+        </div>
+        <div class="result winner">2</div>
+        <div class="score">1</div>
+        <div class="team">
+          <img class="flag" src="./flags/mo-lgflag.gif" alt="Morocco Flag">
+          <span class="name">Morocco</span>
+        </div>
+      </div>
+    </div>
+    <div class="round1">
       <h2>Final</h2>
       <div class="match">
         <div class="team">
@@ -704,21 +719,7 @@ $standings_url = "standings.php";
       </div>
     </div>
 
-    <div class="round1">
-      <h2>Third place play-off</h2>
-      <div class="match">
-        <div class="team">
-          <img class="flag" src="./flags/croatia.png" alt="Croatia Flag">
-          <span class="name">Croatia</span>
-        </div>
-        <div class="result winner">2</div>
-        <div class="score">1</div>
-        <div class="team">
-          <img class="flag" src="./flags/mo-lgflag.gif" alt="Morocco Flag">
-          <span class="name">Morocco</span>
-        </div>
-      </div>
-    </div>
+    
   </div>
 </div>
 </body>

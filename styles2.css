@@ -1,154 +1,169 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
-    background-color: #ffffff;
-    margin: 20px 0;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 80%;
-    max-width: 1000px;
-    text-align: center;
+  background-color: #ffffff;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+text-align: center;
+margin-bottom: 20px;
+color: #333;
 }
 
 .tournament {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 30px;
 }
 
 .round {
-  width: 50%; 
-  margin: 20px auto;  
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 60%; 
+margin: 20px auto;  
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .round1 {
-  width: 40%; 
-  margin: 20px auto;  
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 70%; 
+margin: 20px auto;  
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .match {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+border-bottom: 1px solid #ddd;
 }
 
 .match:last-child {
-  border-bottom: none;
+border-bottom: none;
 }
 
 .team {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .flag {
-  width: 30px;
-  height: 20px;
-  margin-right: 10px;
+width: 30px;
+height: 20px;
+margin-right: 10px;
 }
 
 .name {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .score {
-  font-size: 18px;
-  margin: 0 10px;
+font-size: 18px;
+margin: 0 10px;
+text-align: left;
 }
 
 .result {
-  font-size: 16px;
-  margin-left: 10px;
-  font-weight: bold;
+font-size: 16px;
+margin-left: 10px;
+font-weight: bold;
+text-align: left;
 }
 
 .winner {
-  color: #007bff;
+color: #007bff;
+text-align: left;
 }
 
 .loser {
-  color: #ccc;
+color: #ccc;
 }
 
 .round h2 {
-  margin-top: 0;
+margin-top: 0;
 }
 
 .match.team {
-  width: 40%;
+width: 40%;
 }
 
 .match.score {
-  width: 20%;
-  text-align: center;
+width: 20%;
+text-align: left;
 }
 
 .match.result {
-  width: 40%;
-  text-align: right;
+width: 40%;
+text-align: left;
 }
 
 .group-table {
-  margin-bottom: 30px;
+margin: 0 auto ;
+border-collapse: collapse;
 }
 
-.group-table th,.group-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
+.group-table td {
+padding: 10px;
+border: 1px solid #ddd;
+text-align: left;
+}
+
+#table1{
+  border-collapse: collapse;
+  margin: 0 auto;
 }
 
 .group-table th {
-  background-color: #333;
-  color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
 }
+  
+
 
 .group-table tr:nth-child(even) {
-  background-color: #f9f9f9;
+background-color: #f9f9f9;
 }
 
+
 .navbar {
-    width: 100%;
-    background-color: #333;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #555;
+  background-color: #555;
 }
