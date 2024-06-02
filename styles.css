@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #333;
 }
 
 .navbar {
@@ -35,27 +36,76 @@ body {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 80%;
-    max-width: 1000px;
+    width: 95%;
     text-align: center;
 }
 
 h2 {
-    color: #333333;
+    /* color: #007bff; */
     margin-bottom: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+h3 {
+    /* color: #007bff; */
+    margin-top: 20px;
 }
 
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333333;
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+ul {
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #555;
+}
+
+ul ul {
+    margin-top: 5px;
+}
+
+.features-boxes, .team-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-box, .team-box {
+    background-color: #f4f7f6;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 20px;
+    /* flex: 1 1 calc(25% - 20px); */
+    width: 20%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.feature-box h4 {
+    /* color: #007bff; */
+    margin-bottom: 10px;
+}
+
+.feature-box ul, .feature-box p {
+    color: #555;
+}
+
+.team-box {
+    text-align: center;
+}
+
+.team-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ced4da;
+    margin-bottom: 10px;
 }
 
 input[type="text"],
@@ -66,7 +116,9 @@ input[type="number"] {
     font-size: 16px;
     width: 100%;
     max-width: 400px;
-    margin: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input[type="submit"], button[type="submit"] {
@@ -80,7 +132,9 @@ input[type="submit"], button[type="submit"] {
     transition: background-color 0.3s;
     width: 100%;
     max-width: 400px;
-    margin: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input[type="submit"]:hover, button[type="submit"]:hover {
@@ -117,9 +171,10 @@ td {
 }
 
 .view-table {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
     margin-top: 20px;
+    margin: auto;
 }
 
 .view-table td {
