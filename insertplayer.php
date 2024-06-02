@@ -93,7 +93,7 @@ $edit_data_url = "";
       <input type="text" placeholder="Minutes_90" id="minutes_90s" name="minutes_90s" required><br><br>
       <input type="text" placeholder="Goals" id="goals" name="goals" required><br><br>
       <input type="text" placeholder="Assists" id="assists" name="assists" required><br><br>
-      <input type="text" placeholder="Goals Pens" id="goals_pens" name="goals_pens" required><br><br>
+      <input type="text" placeholder="Goals Penalties" id="goals_pens" name="goals_pens" required><br><br>
       <input type="text" placeholder="Pens Made" id="pens_made" name="pens_made" required><br><br>
       <input type="text" placeholder="Yellow Cards" id="cards_yellow" name="cards_yellow" required><br><br>
       <input type="text" placeholder="Red Cards" id="cards_red" name="cards_red" required><br><br>
