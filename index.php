@@ -69,15 +69,15 @@ $standings_url = "standings.php";
         <p><strong>Satwik Kamath</strong></p>
       </div>
       <div class="team-box">
-        <img src="" alt="Shreesha T.P" />
+        <img src="images/Shreesha.JPG" alt="Shreesha T.P" />
         <p><strong>Shreesha T.P</strong></p>
       </div>
       <div class="team-box">
-        <img src="" alt="Shreeya R" />
+        <img src="images/Shreeya.jpg" alt="Shreeya R" />
         <p><strong>Shreeya R</strong></p>
       </div>
       <div class="team-box">
-        <img src="" alt="Shreya P Manchala" />
+        <img src="images/Shreya.jpg" alt="Shreya P Manchala" />
         <p><strong>Shreya P Manchala</strong></p>
       </div>
     </div>

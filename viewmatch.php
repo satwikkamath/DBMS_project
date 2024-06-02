@@ -53,7 +53,6 @@ $standings_url = "standings.php";
         <th>Result</th>
         <th>Stadium Name</th>
         <th>Stadium ID</th>
-        <th>Actions</th>
         <th>Edit</th>
         <th>Delete</th>
       </tr>
