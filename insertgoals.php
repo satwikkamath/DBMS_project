@@ -25,7 +25,7 @@ $edit_data_url = "";
       <a href=$delete_url>Delete</a>"; ?>
   </div>
   <div class="container">
-    <h2>Insert Data</h2>
+    <h2>Insert Goals Of Indivisual Players</h2>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
@@ -69,31 +69,23 @@ $edit_data_url = "";
 
 
     <form action="" method="post">
-    <label for="goal_id">Goal ID:</label>
-        <input type="text" id="goal_id" name="goal_id" required>
+      <div class="myform">
+        <input type="text" id="goal_id" placeholder="Goal ID" name="goal_id" required>
         
-        <label for="goal_scorer">Goal Scorer:</label>
-        <input type="text" id="goal_scorer" name="goal_scorer" required>
+        <input type="text" id="goal_scorer" placeholder="Goal Scorer" name="goal_scorer" required>
         
-        <label for="scored_against">Scored against:</label>
-        <input type="text" id="scored_against" name="scored_against" required>
+        <input type="text" id="scored_against" placeholder="Scored Against" name="scored_against" required>
 
-        <label for="Round">Round:</label>
-        <input type="text" id="Round" name="Round" required>
+        <input type="text" id="Round" placeholder="Round" name="Round" required>
 
-        <label for="goal_minute">Goal Minute:</label>
-        <input type="text" id="goal_minute" name="goal_minute" required>
+        <input type="text" id="goal_minute" placeholder="Goal Minute" name="goal_minute" required>
 
-        <label for="minute_format">Minute format:</label>
-        <input type="text" id="minute_format" name="minute_format" required>
+        <input type="text" id="minute_format" placeholder="Minute Format" name="minute_format" required>
+        <input type="text" id="team_id" placeholder="Team ID" name="team_id" required>
 
-        <label for="team_id">Team ID:</label>
-        <input type="text" id="team_id" name="team_id" required>
-
-        <label for="match_id">Match ID:</label>
-        <input type="text" id="match_id" name="match_id" required>
-        
-        <input type="submit" value="Insert" name="insert-button">
+        <input type="text" id="match_id" placeholder="Match ID" name="match_id" required>
+        </div>
+        <input type="submit" value="Insert"  name="insert-button">
     </form>
   </body>
   </html>
