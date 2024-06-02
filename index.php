@@ -20,8 +20,7 @@ $delete_url = "delete.php";
     <?php echo " <a href=$index_url>Home</a>
       <a href=$insert_url>Insert</a>
       <a href=$view_url>View</a>
-      <a href=$edit_url>Edit</a>
-      <a href=$delete_url>Delete</a>"; ?>
+      "; ?>
   </div>
   <div class="container">
     <h2>FUCK YOUUUUUUUU</h2>
