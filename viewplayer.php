@@ -27,8 +27,10 @@ $delete_url = "delete.php";
 
     <div class="filters">
       Filters
-      <form action="" class="myform" method="POST">
+      <form action="" method="POST">
+        <div class="myform">
         <input type="text" name="country" id="" placeholder="Country" />
+        </div>
         <input type="submit" name="submit"></input>
       </form>
     </div>

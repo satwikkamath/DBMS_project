@@ -28,13 +28,15 @@ $edit_data_url = "";
 
     <div class="filters">
       Filters
-      <form action="" class="myform" method="POST">
+      <form action="" method="POST">
+        <div class="myform">
         <input type="text" name="stadium_id" id="" placeholder="Stadium ID" />
         <input type="text" name="stadium_name" id="" placeholder="Stadium Name" />
         <input type="text" name="round" id="" placeholder="Round" />
         <input type="text" name="location" id="" placeholder="Location" />
         <input type="text" name="attendance" id="" placeholder="Attendance" />
         <input type="text" name="match_id" id="" placeholder="Match ID" />
+        </div>
         <input type="submit" name="submit"></input>
       </form>
     </div>

@@ -27,13 +27,15 @@ $delete_url = "delete.php";
 
     <div class="filters">
       Filters
-      <form action="" class="myform" method="POST">
+      <form action="" method="POST">
+        <div class="myform">
         <input type="text" name="group_id" id="" placeholder="Group ID" />
         <input type="text" name="team_name" id="" placeholder="Team Name" />
         <input type="text" name="points_gained" id="" placeholder="Points Gained" />
         <input type="text" name="positions" id="" placeholder="positions" />
         <input type="text" name="status" id="" placeholder="Status" />
         <input type="text" name="team_id" id="" placeholder="Team ID" />
+        </div>
         <input type="submit" name="submit"></input>
       </form>
     </div>

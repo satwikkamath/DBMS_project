@@ -27,7 +27,8 @@ $delete_url = "delete.php";
 
     <div class="filters">
       Filters
-      <form action="" method="POST" class="myform">
+      <form action="" method="POST">
+        <div class="myform">
         <input type="text" name="team_id" placeholder="Team ID" />
         <input type="text" name="team_name" placeholder="Team Name" />
         <input type="text" name="wins" placeholder="Wins" />
@@ -40,6 +41,7 @@ $delete_url = "delete.php";
         <input type="text" name="red_cards" placeholder="Red Cards" />
         <input type="text" name="highest_finish" placeholder="Highest Finish" />
         <input type="text" name="group_id" placeholder="Group ID" />
+        </div>
         <input type="submit" name="submit" value="Filter">
       </form>
     </div>
