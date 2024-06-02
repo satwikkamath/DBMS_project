@@ -26,7 +26,7 @@ $standings_url = "standings.php";
       <a href=$view_url>View</a>"; ?>
   </div>
   <div class="container">
-    <h2>Insert Goals Of Indivisual Players</h2>
+    <h2>Insert Goals Of Individual Players</h2>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
@@ -82,6 +82,7 @@ $standings_url = "standings.php";
         <input type="text" id="goal_minute" placeholder="Goal Minute" name="goal_minute" required>
 
         <input type="text" id="minute_format" placeholder="Minute Format" name="minute_format" required>
+      
         <input type="text" id="team_id" placeholder="Team ID" name="team_id" required>
 
         <input type="text" id="match_id" placeholder="Match ID" name="match_id" required>
